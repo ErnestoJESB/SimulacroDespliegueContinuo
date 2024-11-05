@@ -1,25 +1,30 @@
-name: Python Hello World
+name: CI/CD Pipeline
 
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 jobs:
-  hello-world:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          python-version: "3.x"
+          node-version: "16" # o la versión que necesites
 
-      - name: Run Hello World script
+      - name: Install dependencies
         run: |
-          echo 'print("Hola mundo")' > hello_world.py
-          python hello_world.py
+          npm install
+
+      - name: Run tests
+        run: |
+          npm test
+
+      - name: Run Hello World
+        run: |
+          node hello.js

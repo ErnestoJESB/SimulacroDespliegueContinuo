@@ -1,0 +1,23 @@
+{
+  "name": "simulacrodesplieguecontinuo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErnestoJESB/SimulacroDespliegueContinuo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErnestoJESB/SimulacroDespliegueContinuo/issues"
+  },
+  "homepage": "https://github.com/ErnestoJESB/SimulacroDespliegueContinuo#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
